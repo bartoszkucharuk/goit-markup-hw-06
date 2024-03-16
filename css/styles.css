@@ -19,8 +19,7 @@
     --font-weight-400: 400;
     --font-weight-500: 500;
     --font-weight-700: 700;
-
-    /*
+    
     --font-size-12: 12px;
     --font-size-14: 14px;
     --font-size-16: 16px;
@@ -31,6 +30,9 @@
     --font-size-34: 34px;
     --font-size-36: 36px;
     --font-size-44: 44px;
+
+
+    /*
     --line-height-1_143: 1.143;
     --line-height-1_150: 1.15;
     --line-height-1_172: 1.172;
@@ -92,7 +94,7 @@ a {
 
 body {
     font-family: var(--main-font);
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: var(--font-weight-400);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -150,7 +152,7 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -159,7 +161,7 @@ overflow: hidden;
 
 .header-logo-link {
     font-family: var(--secondary-font);
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -208,7 +210,7 @@ overflow: hidden;
 
 .address {
     display: flex;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -263,7 +265,7 @@ overflow: hidden;
 
 .hero-banner {
     max-width: 496px;
-    font-size: 56px;
+    font-size: var(--font-size-56);
     font-weight: var(--font-weight-700);
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -277,7 +279,7 @@ overflow: hidden;
     border: none;
     border-radius: var(--border-radius-4);
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -293,7 +295,7 @@ overflow: hidden;
 }
 /* section 2 - FEATURES*/
 .features {
-    font-size: 16px;
+    font-size: var(--font-size-16);
     padding: 120px 0;
     font-weight: var(--font-weight-400);
     line-height: 1.5;
@@ -334,7 +336,7 @@ overflow: hidden;
 
 .features-name {
     font-weight: var(--font-weight-500);
-    font-size: 20px;
+    font-size: var(--font-size-20);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
@@ -353,7 +355,7 @@ overflow: hidden;
 
 .team-header {
     font-weight: var(--font-weight-700);
-    font-size: 36px;
+    font-size: var(--font-size-36);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -393,7 +395,7 @@ overflow: hidden;
 }
 
 .team-description {
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -443,7 +445,7 @@ overflow: hidden;
 
 .portfolio-header {
     font-weight: var(--font-weight-700);
-    font-size: 36px;
+    font-size: var(--font-size-36);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -474,7 +476,7 @@ overflow: hidden;
 
 .portfolio-description-header {
     color: var(--color-navy-blue);
-    font-size: 20px;
+    font-size: var(--font-size-20);
     font-weight: var(--font-weight-500);
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -492,7 +494,7 @@ overflow: hidden;
 }
 
 .portfolio-overlay-text {
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-cloud);
@@ -521,7 +523,7 @@ overflow: hidden;
 
 .footer {
     font-weight: var(--font-weight-400);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.50;
     letter-spacing: 0.02em;
     background-color: var(--color-navy-blue);
@@ -541,7 +543,7 @@ overflow: hidden;
 
 .footer-logo-link {
     font-family: "var(--secondary-font);", sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -566,7 +568,7 @@ overflow: hidden;
 
 .footer-socials-text {
     font-weight: var(--font-weight-500);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-white);
@@ -618,7 +620,7 @@ color: var(--color-ocean);
 .footer-form-text {
     margin-bottom: 16px;
     font-weight: var(--font-weight-500);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-white);
@@ -634,7 +636,7 @@ color: var(--color-ocean);
     border: 1px solid var(--color-white);
     background-color: transparent;
     height: 40px;
-    font-size: 12px;
+    font-size: var(--font-size-12);
     line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
@@ -650,7 +652,7 @@ color: var(--color-ocean);
     min-width: 165px;
     height: 40px;
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -722,7 +724,7 @@ color: var(--color-ocean);
 
 .modal-area-text {
     font-weight: var(--font-weight-500);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
@@ -737,7 +739,7 @@ color: var(--color-ocean);
 .modal-form-label {
     font-family: var(--main-font);
     font-weight: var(--font-weight-400);
-    font-size: 12px;
+    font-size: var(--font-size-12);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
@@ -759,7 +761,7 @@ color: var(--color-ocean);
     height: 40px;
     font-family: var(--main-font);
     font-weight: var(--font-weight-400);
-    font-size: 18px;
+    font-size: var(--font-size-18);
     line-height: 1.17;
     letter-spacing: 0.04em;
     outline: transparent;
@@ -794,7 +796,7 @@ color: var(--color-ocean);
 .modal-form-textarea-field {
     width: 100%;
     height: 120px;
-    font-size: 12px;
+    font-size: var(--font-size-12);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
@@ -816,7 +818,7 @@ color: var(--color-ocean);
 }
 
 .terms-label {
-    font-size: 12px;
+    font-size: var(--font-size-12);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
@@ -853,7 +855,7 @@ color: var(--color-ocean);
     min-width: 169px;
     height: 56px;
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
     line-height: 1.5;
     letter-spacing: 0.04em;
