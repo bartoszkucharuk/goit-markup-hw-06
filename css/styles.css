@@ -31,27 +31,16 @@
     --font-size-36: 36px;
     --font-size-44: 44px;
 
+    --line-height-1_07: 1.07;
+    --line-height-1_11: 1.11;
+    --line-height-1_17: 1.17;
+    --line-height-1_2: 1.2;
+    --line-height-1_5: 1.5;
+    --line-height-2: 2.0;
 
-    /*
-    --line-height-1_143: 1.143;
-    --line-height-1_150: 1.15;
-    --line-height-1_172: 1.172;
-    --line-height-1_174: 1.174;
-    --line-height-1_192: 1.192;
-    --line-height-1_222: 1.222;
-    --line-height-1_250: 1.25;
-    --line-height-1_367: 1.367;
-    --line-height-1_5660: 1.56;
-    --line-height-1_625: 1.625;
-    --line-height-1_875: 1.875;
-    --line-height-2_000: 2.000;
-    --letter-spacing-001em: 1%;
-    --letter-spacing-002em: 2%;
-    --letter-spacing-003em: 3%;
-    --letter-spacing-006em: 6%;
-    --transition-cubic-bezier-250ms: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-cubic-bezier-backdrop-750ms: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 750ms cubic-bezier(0.4, 0, 0.2, 1); */
+    --letter-spacing-002em: 0.02em;
+    --letter-spacing-003em: 0.03em;
+    --letter-spacing-004em: 0.04em;
 }
 
 * {
@@ -96,8 +85,8 @@ body {
     font-family: var(--main-font);
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-400);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-slate);
     background-color: var(--color-white);
     }
@@ -154,8 +143,8 @@ overflow: hidden;
     align-items: center;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-navy-blue);
 }
 
@@ -163,8 +152,8 @@ overflow: hidden;
     font-family: var(--secondary-font);
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-003em);
     color:var(--color-iris);
     text-transform: uppercase;
     padding: 1.5px 0;
@@ -212,8 +201,8 @@ overflow: hidden;
     display: flex;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-slate);
     font-style: normal;
 }
@@ -267,8 +256,8 @@ overflow: hidden;
     max-width: 496px;
     font-size: var(--font-size-56);
     font-weight: var(--font-weight-700);
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_07);
+    letter-spacing: var(--letter-spacing-002em);
     text-align: center;
 }
 
@@ -281,8 +270,8 @@ overflow: hidden;
     cursor: pointer;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-004em);
     color: var(--color-white);
     background-color: var(--color-iris);
     margin-top: 48px;
@@ -298,8 +287,8 @@ overflow: hidden;
     font-size: var(--font-size-16);
     padding: 120px 0;
     font-weight: var(--font-weight-400);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-slate);
 }
 
@@ -337,8 +326,8 @@ overflow: hidden;
 .features-name {
     font-weight: var(--font-weight-500);
     font-size: var(--font-size-20);
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_2);;
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-navy-blue);
     margin-bottom: 8px;
 }
@@ -356,8 +345,8 @@ overflow: hidden;
 .team-header {
     font-weight: var(--font-weight-700);
     font-size: var(--font-size-36);
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_11);;
+    letter-spacing: var(--letter-spacing-002em);
     text-transform: capitalize;
     color: var(--color-navy-blue);
     text-align: center;
@@ -387,8 +376,8 @@ overflow: hidden;
 .team-name {
     font-size:20px;
     font-weight: var(--font-weight-500);
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_2);;
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-navy-blue);
     text-align: center;
     margin-bottom: 8px;
@@ -397,8 +386,8 @@ overflow: hidden;
 .team-description {
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-slate);
     text-align: center;
     padding-bottom: 8px;
@@ -446,8 +435,8 @@ overflow: hidden;
 .portfolio-header {
     font-weight: var(--font-weight-700);
     font-size: var(--font-size-36);
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_11);;
+    letter-spacing: var(--letter-spacing-002em);
     text-transform: capitalize;
     color: var(--color-navy-blue);
     text-align: center;
@@ -478,8 +467,8 @@ overflow: hidden;
     color: var(--color-navy-blue);
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-500);
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_2);;
+    letter-spacing: var(--letter-spacing-002em);
     margin-bottom: 8px;
 }
 
@@ -495,8 +484,8 @@ overflow: hidden;
 
 .portfolio-overlay-text {
     font-size: var(--font-size-16);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-cloud);
     background-color: var(--color-iris);
     height: 100%;
@@ -524,8 +513,8 @@ overflow: hidden;
 .footer {
     font-weight: var(--font-weight-400);
     font-size: var(--font-size-16);
-    line-height: 1.50;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);;
+    letter-spacing: var(--letter-spacing-002em);
     background-color: var(--color-navy-blue);
     padding: 100px 0;
 }
@@ -545,8 +534,8 @@ overflow: hidden;
     font-family: "var(--secondary-font);", sans-serif;
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-003em);
     color: var(--color-iris);
     text-transform: uppercase;
     padding: 1.5px 0;
@@ -569,8 +558,8 @@ overflow: hidden;
 .footer-socials-text {
     font-weight: var(--font-weight-500);
     font-size: var(--font-size-16);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-white);
     margin-bottom: 16px;
 }
@@ -621,8 +610,8 @@ color: var(--color-ocean);
     margin-bottom: 16px;
     font-weight: var(--font-weight-500);
     font-size: var(--font-size-16);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-white);
 }
 
@@ -637,8 +626,8 @@ color: var(--color-ocean);
     background-color: transparent;
     height: 40px;
     font-size: var(--font-size-12);
-    line-height: 2;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-2);;
+    letter-spacing: var(--letter-spacing-004em);
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: var(--border-radius-4);
@@ -654,8 +643,8 @@ color: var(--color-ocean);
     font-family: var(--main-font);
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-004em);
     color: var(--color-white);
     cursor: pointer;
     background-color: var(--color-iris);
@@ -725,9 +714,9 @@ color: var(--color-ocean);
 .modal-area-text {
     font-weight: var(--font-weight-500);
     font-size: var(--font-size-16);
-    line-height: 1.5;
+    line-height: var(--line-height-1_5);
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: var(--letter-spacing-002em);
     color: var(--color-navy-blue);
     margin-bottom: 16px;
 }
@@ -740,8 +729,8 @@ color: var(--color-ocean);
     font-family: var(--main-font);
     font-weight: var(--font-weight-400);
     font-size: var(--font-size-12);
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-004em);
     color: var(--color-light-slate);
     padding: 0;
     display: block;
@@ -762,8 +751,8 @@ color: var(--color-ocean);
     font-family: var(--main-font);
     font-weight: var(--font-weight-400);
     font-size: var(--font-size-18);
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-004em);
     outline: transparent;
     border-radius: var(--border-radius-4);
     background-color: transparent;
@@ -797,8 +786,8 @@ color: var(--color-ocean);
     width: 100%;
     height: 120px;
     font-size: var(--font-size-12);
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-004em);
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: var(--border-radius-4);
@@ -819,8 +808,8 @@ color: var(--color-ocean);
 
 .terms-label {
     font-size: var(--font-size-12);
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_17);
+    letter-spacing: var(--letter-spacing-004em);
     color: var(--color-light-slate);
 }
 
@@ -857,8 +846,8 @@ color: var(--color-ocean);
     font-family: var(--main-font);
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: var(--line-height-1_5);
+    letter-spacing: var(--letter-spacing-004em);
     color: var(--color-white);
     cursor: pointer;
     background-color: var(--color-iris);
