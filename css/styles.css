@@ -120,8 +120,8 @@ overflow: hidden;
     align-items: center;
     padding: 0 15px;
     margin: 0 auto;
-    /* making visible area of all of containers */
-    /* border: 1px solid red; */
+
+    border: 1px solid red;
 }
 
 .header-main {
@@ -309,9 +309,6 @@ overflow: hidden;
 .fetures-icon {
     width: 64px;
     height: 64px;
-}
-
-.features-header {
 }
 
 .features-list {
@@ -602,10 +599,7 @@ footer a:focus {
 color: var(--color-ocean);
 }
 
-/* .footer-form-area {
-
-} */
-
+/* footer form area */
 .footer-form-text {
     margin-bottom: 16px;
     font-weight: var(--font-weight-500);
