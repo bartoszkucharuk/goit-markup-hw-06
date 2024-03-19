@@ -251,6 +251,28 @@ overflow: hidden;
     }
 }
 
+/* ===== MOBILE @media ==================== */
+@media screen and (max-width: 767px) {
+    .hero {
+        max-height: 432px;
+    }
+}
+
+/* ===== TABLET @media ==================== */
+@media screen and (min-width: 768px) {
+    .hero {
+        max-height: 436px;
+    }
+}
+
+/* ===== DESKTOP @media==================== */
+@media screen and (min-width: 1158px) {
+    .hero {
+        max-height: 600px;
+    }
+}
+
+
 .hero > .container {
     display: flex;
     flex-direction: column;
@@ -258,21 +280,21 @@ overflow: hidden;
     width: 1158px;
 }
 
-/* ==================== MOBILE 👇 ==================== */
+/* ===== MOBILE @media ==================== */
 @media screen and (max-width: 767px) {
     .hero > .container {
     max-width: 320px;
     }
 }
 
-/* ==================== TABLET 👇 ==================== */
+/* ===== TABLET @media ==================== */
 @media screen and (min-width: 768px) {
     .hero>.container {
             max-width: 768px;
     }
 }
 
-/* ==================== DESKTOP 👇 ==================== */
+/* ===== DESKTOP @media ==================== */
 @media screen and (min-width: 1158px) {
     .hero>.container {
             max-width: 1158px;
@@ -288,7 +310,7 @@ overflow: hidden;
     text-align: center;
 }
 
-/* ==================== MOBILE 👇 ==================== */
+/* ===== MOBILE @media ==================== */
 @media screen and (max-width: 767px) {
     .hero-banner {
         max-width: 216px;
@@ -297,7 +319,7 @@ overflow: hidden;
     }
 }
 
-/* ==================== TABLET + DESKTOP 👇 ==================== */
+/* ===== TABLET @media + DESKTOP @media ==================== */
 @media screen and (min-width: 768px) {
     .hero-banner {
             max-width: 496px;
