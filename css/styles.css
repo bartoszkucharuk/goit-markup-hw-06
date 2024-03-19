@@ -467,8 +467,8 @@ overflow: hidden;
     margin-bottom: 8px;
 }
 
-/* ===== @media MOBILE ==================== */
-@media screen and (max-width: 767px) {
+/* ===== @media MOBILE and @media TABLET ==================== */
+@media screen and (max-width: 1157px) {
     .features-name {
         font-family: var(--main-font);
         font-weight: var(--font-weight-700);
@@ -477,6 +477,13 @@ overflow: hidden;
         letter-spacing: var(--letter-spacing-002em);
         text-align: center;
         color: var(--color-navy-blue);
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .features-name {
+        text-align: left;
     }
 }
 
