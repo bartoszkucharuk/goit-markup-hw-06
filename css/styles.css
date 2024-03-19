@@ -251,21 +251,21 @@ overflow: hidden;
     }
 }
 
-/* ===== MOBILE @media ==================== */
+/* ===== @media MOBILE ==================== */
 @media screen and (max-width: 767px) {
     .hero {
         max-height: 432px;
     }
 }
 
-/* ===== TABLET @media ==================== */
+/* ===== @media TABLET ==================== */
 @media screen and (min-width: 768px) {
     .hero {
         max-height: 436px;
     }
 }
 
-/* ===== DESKTOP @media==================== */
+/* ===== @media DESKTOP==================== */
 @media screen and (min-width: 1158px) {
     .hero {
         max-height: 600px;
@@ -280,24 +280,24 @@ overflow: hidden;
     width: 1158px;
 }
 
-/* ===== MOBILE @media ==================== */
+/* ===== @media MOBILE ==================== */
 @media screen and (max-width: 767px) {
     .hero > .container {
     max-width: 320px;
     }
 }
 
-/* ===== TABLET @media ==================== */
+/* ===== @media TABLET ==================== */
 @media screen and (min-width: 768px) {
     .hero>.container {
-            max-width: 768px;
+        max-width: 768px;
     }
 }
 
-/* ===== DESKTOP @media ==================== */
+/* ===== @media DESKTOP ==================== */
 @media screen and (min-width: 1158px) {
     .hero>.container {
-            max-width: 1158px;
+        max-width: 1158px;
     }
 }
 
@@ -310,7 +310,7 @@ overflow: hidden;
     text-align: center;
 }
 
-/* ===== MOBILE @media ==================== */
+/* ===== @media MOBILE ==================== */
 @media screen and (max-width: 767px) {
     .hero-banner {
         max-width: 216px;
@@ -319,11 +319,11 @@ overflow: hidden;
     }
 }
 
-/* ===== TABLET @media + DESKTOP @media ==================== */
+/* ===== @media TABLET + @media DESKTOP ==================== */
 @media screen and (min-width: 768px) {
     .hero-banner {
-            max-width: 496px;
-        }
+        max-width: 496px;
+    }
 }
 
 
@@ -372,6 +372,7 @@ overflow: hidden;
     border-radius: var(--border-radius-4);
     margin-bottom: 8px;
 }
+
 
 .fetures-icon {
     width: 64px;
