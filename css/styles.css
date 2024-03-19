@@ -294,13 +294,6 @@ overflow: hidden;
     }
 }
 
-/* ===== @media DESKTOP ==================== */
-@media screen and (min-width: 1158px) {
-    .hero>.container {
-        max-width: 1158px;
-    }
-}
-
 .hero-banner {
     max-width: 496px;
     font-size: var(--font-size-56);
@@ -326,8 +319,6 @@ overflow: hidden;
     }
 }
 
-
-
 .hero-button {
     display: block;
     min-width: 169px;
@@ -352,11 +343,32 @@ overflow: hidden;
 /* section 2 - FEATURES*/
 .features {
     font-size: var(--font-size-16);
-    padding: 120px 0;
+    margin: 120px auto;
     font-weight: var(--font-weight-400);
     line-height: var(--line-height-1_5);
     letter-spacing: var(--letter-spacing-002em);
     color: var(--color-slate);
+}
+
+/* ===== @media MOBILE and @media TABLET ==================== */
+@media screen and (max-width: 767px) {
+    .features {
+        margin: 96px auto;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .features {
+        margin: 96px auto;
+    }
+}
+
+/* ===== @media DESKTOP==================== */
+@media screen and (min-width: 1158px) {
+    .features { 
+        margin: 120px auto;
+    }
 }
 
 .features > .container {
@@ -730,6 +742,13 @@ color: var(--color-ocean);
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
 
 .modal-window {
     position: absolute;
