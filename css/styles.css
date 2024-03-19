@@ -30,6 +30,7 @@
     --font-size-34: 34px;
     --font-size-36: 36px;
     --font-size-44: 44px;
+    --font-size-56: 56px;
 
     --line-height-1_07: 1.07;
     --line-height-1_11: 1.11;
@@ -109,7 +110,6 @@ height: 1px;
 margin: -1px;
 border: 0;
 padding: 0;
-
 white-space: nowrap;
 clip-path: inset(100%);
 clip: rect(0 0 0 0);
@@ -120,13 +120,14 @@ overflow: hidden;
     align-items: center;
     padding: 0 15px;
     margin: 0 auto;
-
     border: 1px solid red;
 }
 
 .header-main {
     border-bottom: 1px solid var(--color-cornflower);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-main > .container {
@@ -181,12 +182,12 @@ overflow: hidden;
     color: var(--color-ocean);
 }
 
- .current {
+.current {
      position: relative;
      color: var(--color-ocean);
- }
+}
 
- .current::after { 
+.current::after { 
     position: absolute;
     content: "";
     width: 100%;
@@ -225,24 +226,29 @@ overflow: hidden;
 .hero {
     color: var(--color-white);
     background-color: var(--color-navy-blue);
-
-    /* trying to adjust position */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    
-    /* rest of code */
     padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1440px;
+}
+
+@media (min-resolution: 192dpi) {
+    .hero {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        max-width: 1440px;
+                url(../images/people-office@2x.jpg);
+    }
 }
 
 .hero > .container {
@@ -250,6 +256,27 @@ overflow: hidden;
     flex-direction: column;
     justify-content: center;
     width: 1158px;
+}
+
+/* ==================== MOBILE 👇 ==================== */
+@media screen and (max-width: 767px) {
+    .hero > .container {
+    max-width: 320px;
+    }
+}
+
+/* ==================== TABLET 👇 ==================== */
+@media screen and (min-width: 768px) {
+    .hero>.container {
+            max-width: 768px;
+    }
+}
+
+/* ==================== DESKTOP 👇 ==================== */
+@media screen and (min-width: 1158px) {
+    .hero>.container {
+            max-width: 1158px;
+    }
 }
 
 .hero-banner {
@@ -260,6 +287,24 @@ overflow: hidden;
     letter-spacing: var(--letter-spacing-002em);
     text-align: center;
 }
+
+/* ==================== MOBILE 👇 ==================== */
+@media screen and (max-width: 767px) {
+    .hero-banner {
+        max-width: 216px;
+        font-size: var(--font-size-36);
+        line-height: var(--line-height-1_11);
+    }
+}
+
+/* ==================== TABLET + DESKTOP 👇 ==================== */
+@media screen and (min-width: 768px) {
+    .hero-banner {
+            max-width: 496px;
+        }
+}
+
+
 
 .hero-button {
     display: block;
