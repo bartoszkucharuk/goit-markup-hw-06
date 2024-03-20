@@ -196,6 +196,11 @@ overflow: hidden;
     color: var(--color-navy-blue);
 }
 
+.hamburger-menu-icon {
+
+}
+
+
 .hamburger-menu-icon:hover,
 .hamburger-menu-icon:focus {
     fill: var(--color-ocean);
