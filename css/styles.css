@@ -201,6 +201,14 @@ overflow: hidden;
     gap: 40px;
 }
 
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .header-nav-ul {
+        display: none;
+    }
+}
+
+
 .nav-link {
     position: relative;
     padding: 24px 0;
@@ -242,6 +250,21 @@ overflow: hidden;
 .address-ul {
     display: flex;
     gap: 40px;
+}
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .address-ul {
+        display: none;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .address-ul {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 .address-link {
