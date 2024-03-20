@@ -116,6 +116,16 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
+/* HIDDEN CLASS FOR INACTIVE ELEMENTS */
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* HIDDEN CLASS FOR INACTIVE ELEMENTS */
+
+/* === starting =============================================================== */
+
 .container {
     align-items: center;
     padding: 0 15px;
@@ -134,9 +144,30 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1158px;
     margin: 0 auto;
 }
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .header-main > .container {
+        max-width: 320px;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .header-main > .container {
+        max-width: 768px;
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .header-main>.container {
+        max-width: 1158px;
+    }
+}
+
 
 .header-nav {
     display: flex;
