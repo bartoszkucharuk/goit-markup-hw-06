@@ -196,6 +196,14 @@ overflow: hidden;
     color: var(--color-navy-blue);
 }
 
+.hamburger-menu-icon:hover,
+.hamburger-menu-icon:focus {
+    fill: var(--color-ocean);
+}
+
+
+
+
 .header-nav-ul {
     display: flex;
     gap: 40px;
