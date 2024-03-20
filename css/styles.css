@@ -173,6 +173,7 @@ overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
     line-height: var(--line-height-1_5);
@@ -197,17 +198,20 @@ overflow: hidden;
 }
 
 .hamburger-menu-icon {
-
+    display: none;
 }
 
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .hamburger-menu-icon {
+        display:block;
+    }
+}
 
 .hamburger-menu-icon:hover,
 .hamburger-menu-icon:focus {
     fill: var(--color-ocean);
 }
-
-
-
 
 .header-nav-ul {
     display: flex;
