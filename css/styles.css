@@ -261,13 +261,11 @@ overflow: hidden;
     }
 }
 
-
 .nav-link {
     position: relative;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .nav-link:hover,
 .nav-link:focus {
@@ -486,7 +484,6 @@ overflow: hidden;
     }
 }
 
-
 /* ===== @media MOBILE ==================== */
 @media screen and (max-width: 767px) {
     .features>.container {
@@ -552,7 +549,6 @@ overflow: hidden;
     }
 }
 
-
 .features-item {
     width: calc((100% - 72px) / 4);
 }
@@ -570,8 +566,6 @@ overflow: hidden;
         width: 356px;
     }
 }
-
-
 
 .features-name {
     font-weight: var(--font-weight-500);
