@@ -181,6 +181,15 @@ overflow: hidden;
     color: var(--color-navy-blue);
 }
 
+/* ===== @media MOBILE ==================== */
+@media screen and (min-width: 768px) {
+    .header-nav {
+        justify-content: flex-start;
+    }
+}
+
+
+
 .header-logo-link {
     font-family: var(--secondary-font);
     font-size: var(--font-size-18);
@@ -192,6 +201,29 @@ overflow: hidden;
     padding: 1.5px 0;
     margin: 24px 76px 24px 0;
 }
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .header-logo-link {
+        margin-right: auto;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .header-logo-link {
+        margin-right: 120px;
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .header-logo-link {
+        margin-right: 76px;
+    }
+}
+
+
 
 .header-main span {
     color: var(--color-navy-blue);
