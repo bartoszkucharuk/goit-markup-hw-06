@@ -978,18 +978,86 @@ overflow: hidden;
     padding: 100px 0;
 }
 
-.footer .container {
+/* ===== @media MOBILE and @media TABLET ==================== */
+@media screen and (max-width: 1157px) {
+    .footer {
+        padding: 96px 0;
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+}
+
+.footer > .container {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
-    width: 1158px;
+
+}
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer>.container {
+        flex-direction: column;
+        width: 320px;
+
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .footer>.container {
+        flex-wrap: wrap;
+        width: 768px;
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .footer>.container {
+        flex-direction: row;
+        align-items: baseline;
+        width: 1158px;
+    }
 }
 
 .footer-logo {
+    display: flex;
     margin-right: 120px;
+    flex-direction: column;
 }
 
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer-logo {
+        max-width: 288px;
+        margin: 0 auto;
+        row-gap: 16px;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        max-width: 264px;
+        margin-right: 24px;
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .footer-logo {
+        margin: 100px 120px 100px 0;
+    }
+}
+
+
+
 .footer-logo-link {
+    display: flex;
     font-family: "var(--secondary-font);", sans-serif;
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-700);
@@ -999,6 +1067,20 @@ overflow: hidden;
     text-transform: uppercase;
     padding: 1.5px 0;
 }
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer-logo-link {
+        justify-content: center;
+    }
+}
+
+/* ===== @media TABLET and @media Desktop ==================== */
+@media screen and (min-width: 768px) {
+    .footer-logo-link {
+        justify-content: left;
+    }
+}
+
 
 .footer-span {
     color: var(--color-cloud);
@@ -1007,7 +1089,7 @@ overflow: hidden;
 .footer-text {
     color: var(--color-cloud);
     width: 264px;
-    margin-top: 16px;
+    justify-content: left;
 }
 
 .footer-socials {
