@@ -1039,7 +1039,7 @@ overflow: hidden;
 @media screen and (min-width: 768px) {
     .footer-logo {
         max-width: 264px;
-        margin: 0 24px 0 92px;
+        margin: 0 24px 72px 92px;
         row-gap: 16px;
     }
 }
@@ -1170,6 +1170,17 @@ color: var(--color-ocean);
 }
 
 /* footer form area */
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer-form-area {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: column;
+        width: 288px;
+    }
+}
+
 .footer-form-text {
     margin-bottom: 16px;
     font-weight: var(--font-weight-500);
