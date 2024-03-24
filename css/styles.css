@@ -975,7 +975,6 @@ overflow: hidden;
     line-height: var(--line-height-1_5);;
     letter-spacing: var(--letter-spacing-002em);
     background-color: var(--color-navy-blue);
-    padding: 100px 0;
 }
 
 /* ===== @media MOBILE and @media TABLET ==================== */
@@ -995,7 +994,6 @@ overflow: hidden;
 .footer > .container {
     display: flex;
     justify-content: flex-start;
-
 }
 
 /* ===== @media MOBILE ==================== */
@@ -1003,7 +1001,6 @@ overflow: hidden;
     .footer>.container {
         flex-direction: column;
         width: 320px;
-
     }
 }
 
@@ -1026,15 +1023,14 @@ overflow: hidden;
 
 .footer-logo {
     display: flex;
-    margin-right: 120px;
     flex-direction: column;
 }
 
 /* ===== @media MOBILE ==================== */
 @media screen and (max-width: 767px) {
     .footer-logo {
-        max-width: 288px;
-        margin: 0 auto;
+        width: 288px;
+        margin: 0 auto 72px;
         row-gap: 16px;
     }
 }
@@ -1043,18 +1039,18 @@ overflow: hidden;
 @media screen and (min-width: 768px) {
     .footer-logo {
         max-width: 264px;
-        margin-right: 24px;
+        margin: 0 24px 0 92px;
+        row-gap: 16px;
     }
 }
 
 /* ===== @media DESKTOP ==================== */
 @media screen and (min-width: 1158px) {
     .footer-logo {
-        margin: 100px 120px 100px 0;
+        margin-left: 0;
+        margin-right: 120px;
     }
 }
-
-
 
 .footer-logo-link {
     display: flex;
@@ -1081,7 +1077,6 @@ overflow: hidden;
     }
 }
 
-
 .footer-span {
     color: var(--color-cloud);
 }
@@ -1093,7 +1088,31 @@ overflow: hidden;
 }
 
 .footer-socials {
-    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+ }
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer-socials {
+        margin-bottom: 72px;
+    }
+}
+
+/* ===== @media TABLET ==================== */
+@media screen and (min-width: 768px) {
+    .footer-socials {
+        align-self: flex-start;
+
+    }
+}
+
+/* ===== @media DESKTOP ==================== */
+@media screen and (min-width: 1158px) {
+    .footer-socials {
+   
+    }
 }
 
 .footer-socials-text {
@@ -1102,8 +1121,16 @@ overflow: hidden;
     line-height: var(--line-height-1_5);
     letter-spacing: var(--letter-spacing-002em);
     color: var(--color-white);
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .footer-socials-text {
+        margin: 0 auto;
+    }
+}
+
 
 .footer-socials-list {
     display: flex;
