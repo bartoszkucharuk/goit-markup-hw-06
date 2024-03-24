@@ -1104,14 +1104,13 @@ overflow: hidden;
 @media screen and (min-width: 768px) {
     .footer-socials {
         align-self: flex-start;
-
     }
 }
 
 /* ===== @media DESKTOP ==================== */
 @media screen and (min-width: 1158px) {
     .footer-socials {
-   
+        margin-right: 80px;
     }
 }
 
@@ -1183,6 +1182,13 @@ color: var(--color-ocean);
 .subscribe-form {
     display: flex;
     gap: 24px;
+}
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
 }
 
 .form-input {
