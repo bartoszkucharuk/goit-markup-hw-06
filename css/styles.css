@@ -1193,7 +1193,7 @@ color: var(--color-ocean);
 @media screen and (min-width: 1158px) {
     .footer-form-area {
         flex-direction: row;
-        margin: 0 24px 72px 92px;
+        margin: 0;
     }
 }
 
