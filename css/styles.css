@@ -302,7 +302,7 @@ overflow: hidden;
     content: "";
     width: 100%;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
     height: 4px;
     background-color: var(--color-ocean);
     border-radius: var(--border-radius-2);
@@ -334,7 +334,7 @@ overflow: hidden;
     .address-ul {
         flex-direction: column;
         gap: 12px;
-        padding: 16px 0;
+        /* padding: 16px 0; */
     }
 }
 
@@ -1310,7 +1310,6 @@ color: var(--color-ocean);
     pointer-events: auto;
     visibility: visible;
 }
-
 
 .modal-window {
     position: absolute;
