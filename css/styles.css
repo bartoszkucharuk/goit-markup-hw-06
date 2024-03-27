@@ -1469,7 +1469,6 @@ margin-bottom: 16px;
 
 .terms-label {
     display: block;
-    text-indent: 8px;
     font-size: var(--font-size-12);
     line-height: var(--line-height-1_17);
     letter-spacing: var(--letter-spacing-004em);
