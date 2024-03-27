@@ -224,6 +224,11 @@ overflow: hidden;
         color: inherit;
 }
 
+.mob-address a:hover,
+.mob-address a:focus {
+    color: var(--color-ocean);
+}
+
 .mob-socials {
     display: inline-flex;
     flex-direction: row;
