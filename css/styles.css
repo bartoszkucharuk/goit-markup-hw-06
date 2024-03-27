@@ -139,7 +139,7 @@ overflow: hidden;
     align-items: center;
     padding: 0 15px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* HIDDEN CLASS FOR INACTIVE ELEMENTS */
@@ -156,7 +156,6 @@ overflow: hidden;
     pointer-events: auto;
     visibility: visible;
 }
-/* OPENING ONLY WHEN DEMAND */
 
 /* === starting =============================================================== */
 
@@ -176,7 +175,7 @@ overflow: hidden;
     height: 100%;
     background-color: #FFFFFF;
     overflow-y: hidden;
-    padding-top: 72px; 
+    padding-top: 72px;
 }
 
 .mob-nav {
