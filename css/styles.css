@@ -163,6 +163,7 @@ overflow: hidden;
 
 .mob-backdrop .container {
     max-width: 320px;
+    height: 100%;
 }
 
 .mob-backdrop {
@@ -173,7 +174,6 @@ overflow: hidden;
     overflow-y: hidden;
     padding-top: 72px; 
 }
-
 
 .mob-list {
     display: flex;
@@ -187,12 +187,27 @@ overflow: hidden;
     gap: 40px;
 }
 
-.mob-item {
-
+.mob-address {
+    display: flex;
 }
 
-.mob-link{
+.mob-address-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: var(--main-font);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-1_2);
+    letter-spacing: var(--letter-spacing-002em);
+    color: var(--color-slate);
+    margin-top: auto;
+    margin-bottom: 48px;
+}
 
+.mob-address a {
+        text-decoration: none;
+        color: inherit;
 }
 
 
