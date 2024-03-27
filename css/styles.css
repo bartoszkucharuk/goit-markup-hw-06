@@ -1325,6 +1325,16 @@ color: var(--color-ocean);
     padding: 72px 24px 24px 24px;
 }
 
+
+@media screen and (max-width: 757px) {
+.modal-window {
+    width: 288px;
+    height: 623px;
+    padding: 72px 24px 24px 24px;
+}
+    
+}
+
 .modal-btn-close {
     position: absolute;
     display: flex;
@@ -1421,7 +1431,14 @@ color: var(--color-ocean);
 }
 
 .modal-form-textarea {
-    margin-bottom: 16px;
+margin-bottom: 16px;
+}
+
+/* ===== @media MOBILE ==================== */
+@media screen and (max-width: 767px) {
+    .modal-form-textarea {
+        max-height: 138px;
+    }
 }
 
 .modal-form-textarea-field {
@@ -1439,6 +1456,8 @@ color: var(--color-ocean);
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .modal-form-textarea-field:focus {
     border-color: var(--color-iris);
