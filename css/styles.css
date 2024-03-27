@@ -176,6 +176,15 @@ overflow: hidden;
     background-color: #FFFFFF;
     overflow-y: hidden;
     padding-top: 72px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mob-backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .mob-nav {
