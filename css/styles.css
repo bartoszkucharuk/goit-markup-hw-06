@@ -347,8 +347,8 @@ overflow: hidden;
     color: var(--color-ocean);
 }
 
-/* MOBILE MENU- @MEDIA QUERY FOR SCREEN AND (MAX-WIDTH: 767PX) ONLY */
-
+/* DISPLAYING MOBILE MENU- @MEDIA QUERY FOR SCREEN AND (MAX-WIDTH: 767PX) ONLY */
+@media screen and (max-width: 767px) {
 .mob-menu {
     position: fixed;
     top: 0;
@@ -361,7 +361,15 @@ overflow: hidden;
     padding: 72px 16px 40px;
     transform: translateX(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .mob-menu {
+        display: none;
+    }
+}
+/* END DISPLAYING MOBILE MENU- @MEDIA QUERY FOR SCREEN AND (MAX-WIDTH: 767PX) ONLY */
 
 .mob-menu.is-open {
     transform: translateX(0);
