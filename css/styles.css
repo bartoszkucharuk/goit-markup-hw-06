@@ -139,29 +139,11 @@ overflow: hidden;
     align-items: center;
     padding: 0 15px;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
-/* HIDDEN CLASS FOR INACTIVE ELEMENTS */
-/* .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-} */
-/* HIDDEN CLASS FOR INACTIVE ELEMENTS */
 
-/* OPENING ONLY WHEN DEMAND */
-.is-open {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-}
 
-/* === starting =============================================================== */
-
-/* MOBILE MENU FOR @MEDIA QUERIES */
-
-.mob-backdrop {
+.mob-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -169,18 +151,15 @@ overflow: hidden;
     height: 100%;
     background-color: #FFFFFF;
     display: flex;
-flex-direction: column;
-    padding-top: 72px;
-    /* opacity: 0;
-    visibility: hidden;
-    pointer-events: none; */
+    flex-direction: column;
+    padding: 72px 16px 40px;
+    transform: translateX(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-/* .mob-backdrop.is-open {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-} */
+.mob-menu.is-open {
+    transform: translateX(0);
+}
 
 .mob-list {
     display: flex;
@@ -262,19 +241,6 @@ flex-direction: column;
 .mob-socials-icon {
     fill: var(--color-cloud);
 }
-
-
-/* END OF MOBILE MENU FOR @MEDIA QUERIES */
-
-
-
-
-
-
-
-
-
-
 
 .header-main {
     border-bottom: 1px solid var(--color-cornflower);
@@ -478,6 +444,12 @@ flex-direction: column;
 .address-link:focus {
     color: var(--color-ocean);
 }
+
+
+
+
+
+
 
 /* section 1: HERO */
 .hero {
