@@ -1430,7 +1430,7 @@ color: var(--color-ocean);
 .modal-window {
     width: 288px;
     height: 623px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px;
 }
     
 }
@@ -1587,16 +1587,10 @@ margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* SPAN PROBLEM */
-
 .modal-form-checkbox-input:checked + .terms-label .user-privacy-span {
     border: none;
     background-color: var(--color-ocean);
     fill: var(--color-cloud);
-}
-
-.privacy-policy-text {
-    display: inline-flex;
 }
 
 .privacy-policy-link {
