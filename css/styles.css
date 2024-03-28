@@ -1565,8 +1565,6 @@ margin-bottom: 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .modal-form-textarea-field:focus {
     border-color: var(--color-iris);
 }
@@ -1576,7 +1574,7 @@ margin-bottom: 16px;
 }
 
 .terms-label {
-    display: block;
+    display: inline-flex;
     font-size: var(--font-size-12);
     line-height: var(--line-height-1_17);
     letter-spacing: var(--letter-spacing-004em);
@@ -1588,12 +1586,21 @@ margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin: auto 8px auto 0;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: var(--border-radius-2);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.privacy-checkbox-text {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 
 .modal-form-checkbox-input:checked + .terms-label .user-privacy-span {
     border: none;

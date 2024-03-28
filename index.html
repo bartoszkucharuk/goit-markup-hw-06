@@ -47,7 +47,7 @@
             </address>
         </div>
 <!-- MOBILE MENU -->
-        <div class="mob-menu is-open">
+        <div class="mob-menu">
                 <button class="modal-btn-close" type="button">
                     <svg class="modal-btn-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
@@ -550,7 +550,7 @@
         </div>
     </footer>
 <!-- backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <!-- .is-open -->
         <div class="modal-window">
             <button class="modal-btn-close" type="button">
@@ -604,13 +604,17 @@
                 <div class="modal-form-checkbox">
                     <input class="modal-form-checkbox-input visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy" required>
                         <label class="terms-label" for="user-privacy">
+
                         <span class="user-privacy-span">
                         <svg class="user-privacy-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checked"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="privacy-policy-link" href="#">Privacy Policy</a>
+  
+                        <div class="privacy-checkbox-text">
+                            I accept the terms and conditions of the 
+                            <a class="privacy-policy-link" href="#">Privacy Policy</a>
+                        </div>
                     </label> 
                 </div>
 
