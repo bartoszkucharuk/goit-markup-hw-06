@@ -1404,6 +1404,13 @@ color: var(--color-ocean);
     visibility: hidden;
 }
 
+
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
 .modal-window {
     position: absolute;
     top: 50%;
