@@ -388,6 +388,10 @@ overflow: hidden;
     gap: 40px;
 }
 
+.mob-item:nth-child(1) {
+    color: var(--color-ocean);
+}
+
 .mob-menu-rest {
     display: block;
     margin-bottom: 40px;
@@ -411,6 +415,10 @@ overflow: hidden;
     margin-top: auto;
     margin-bottom: 48px;
     font-style: normal;
+}
+
+.mob-address-li:nth-child(1) {
+    color: var(--color-ocean);
 }
 
 .mob-address a {
