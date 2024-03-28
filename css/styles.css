@@ -478,7 +478,7 @@ overflow: hidden;
             rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     max-width: 1440px;
 }
@@ -1599,7 +1599,7 @@ margin-bottom: 16px;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    gap: 4px;
+    column-gap: 4px;
 }
 
 
